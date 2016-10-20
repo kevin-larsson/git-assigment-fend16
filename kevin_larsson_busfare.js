@@ -12,20 +12,20 @@ var noll = 0;
 
 /* När k är större än total */
 while (total < k) {
-/* Ska den ifall det värdet är större än 500 addera 500 till totala summan och dra den summan från k och lägger till en transaktion */
+  /* Ska den ifall det värdet är större än 500 addera 500 till totala summan och dra den summan från k och lägger till en transaktion */
   if (total + 500 <= k) {
 
     total = total + 500;
     k = k - 500;
     trans++;
-  } 
- /* Samma fast med 200 */ 
+  }
+  /* Samma fast med 200 */
   else if (total + 200 <= k || total === 150) {
 
     total = total + 200;
     k = k - 200;
     trans++;
-  } 
+  }
   /* Samma fast med hundra */
   else if (total + 100 <= k || total === 50) {
 
