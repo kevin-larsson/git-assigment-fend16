@@ -20,14 +20,14 @@ while (total < k) {
     trans++;
   }
   /* Samma fast med 200 */
-  else if (total + 200 <= k || total === 150) {
+  else if (total + 200 <= k || k === 150) {
 
     total = total + 200;
     k = k - 200;
     trans++;
   }
   /* Samma fast med hundra */
-  else if (total + 100 <= k || total === 50) {
+  else if (total + 100 <= k || k === 50) {
 
     total = total + 100;
     k = k - 100;
